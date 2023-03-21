@@ -1,0 +1,11 @@
+---
+title: "A Minimal bookdown Project"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+---
+
+<!-- This book can be rendered with the following command `knit_with_parameters("~/R/template_Rproject/docs/index.Rmd")` or by using the knit button above in the RStudio -->
+
+# Preface {-}
+
+This is a minimal working book that contains the scripts used to create my analysis

@@ -1,0 +1,15 @@
+# Star Wars Analysis
+
+<!-- If you want to include code but don't want to run it. You may use eval = FALSE in the chunck option. This will print, but not execute the code. -->
+
+## Load data
+
+```{r, file = "../src/analysis_1/01_count_species.R", eval = FALSE}
+```
+
+## Visualize data
+
+```{r, file = "../src/analysis_1/02_histogram_species.R"}
+```
+
+

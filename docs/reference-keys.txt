@@ -1,3 +1,0 @@
-star-wars-analysis
-load-data
-visualize-data

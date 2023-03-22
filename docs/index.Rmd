@@ -1,11 +1,43 @@
 ---
-title: "A Minimal bookdown Project"
-site: bookdown::bookdown_site
-output: bookdown::gitbook
+title: "Template"
+author: "TS O'Leary"
+date: "2023-03-22"
+description: "Template gitbook report of analysis"
+output:
+  bookdown::gitbook:
+    number_sections: true
+    split_by: chapter
+    toc_depth: 4
+    toc_collapse: true
+documentclass: book
 ---
+
+
+```{r, setup, include=FALSE}
+knitr::opts_knit$set(root.dir = here::here())
+```
+
 
 <!-- This book can be rendered with the following command `knit_with_parameters("~/R/template_Rproject/docs/index.Rmd")` or by using the knit button above in the RStudio -->
 
 # Preface {-}
 
 This is a minimal working book that contains the scripts used to create my analysis
+
+# Star Wars Analysis
+
+<!-- If you want to include code but don't want to run it. You may use eval = FALSE in the chunck option. This will print, but not execute the code. -->
+
+This is a test using text.
+
+## Load data
+
+Test using text.
+
+```{r, file = "src/analysis_1/01_count_species.R", eval = FALSE}
+```
+
+## Visualize data
+
+```{r, file = "src/analysis_1/02_histogram_species.R"}
+```

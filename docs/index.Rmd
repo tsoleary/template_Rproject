@@ -59,3 +59,10 @@ Scatter plot of the petal measurements.
 
 ```{r, file = "src/iris/02_petal_plot.R"}
 ```
+
+
+# Session Info {-}
+
+```{r}
+sessionInfo()
+```

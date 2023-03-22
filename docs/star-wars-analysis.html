@@ -4,20 +4,20 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>1 Star Wars Analysis | Template</title>
-  <meta name="description" content="1 Star Wars Analysis | Template gitbook report of analysis" />
+  <title>1 Star Wars Analysis | Template Book Title</title>
+  <meta name="description" content="Template gitbook report of analysis" />
   <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="1 Star Wars Analysis | Template" />
+  <meta property="og:title" content="1 Star Wars Analysis | Template Book Title" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:description" content="1 Star Wars Analysis | Template gitbook report of analysis" />
+  <meta property="og:description" content="Template gitbook report of analysis" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="1 Star Wars Analysis | Template" />
+  <meta name="twitter:title" content="1 Star Wars Analysis | Template Book Title" />
   
-  <meta name="twitter:description" content="1 Star Wars Analysis | Template gitbook report of analysis" />
+  <meta name="twitter:description" content="Template gitbook report of analysis" />
   
 
 <meta name="author" content="TS O’Leary" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="preface.html"/>
-
+<link rel="prev" href="project-goal.html"/>
+<link rel="next" href="iris-analysis.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -132,11 +132,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="" data-path="project-goal.html"><a href="project-goal.html"><i class="fa fa-check"></i>Project goal</a></li>
 <li class="chapter" data-level="1" data-path="star-wars-analysis.html"><a href="star-wars-analysis.html"><i class="fa fa-check"></i><b>1</b> Star Wars Analysis</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="star-wars-analysis.html"><a href="star-wars-analysis.html#load-data"><i class="fa fa-check"></i><b>1.1</b> Load data</a></li>
+<li class="chapter" data-level="1.1" data-path="star-wars-analysis.html"><a href="star-wars-analysis.html#load-data-count-species"><i class="fa fa-check"></i><b>1.1</b> Load data &amp; Count species</a></li>
 <li class="chapter" data-level="1.2" data-path="star-wars-analysis.html"><a href="star-wars-analysis.html#visualize-data"><i class="fa fa-check"></i><b>1.2</b> Visualize data</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="iris-analysis.html"><a href="iris-analysis.html"><i class="fa fa-check"></i><b>2</b> Iris Analysis</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="iris-analysis.html"><a href="iris-analysis.html#load-data-group-species"><i class="fa fa-check"></i><b>2.1</b> Load data &amp; Group species</a></li>
+<li class="chapter" data-level="2.2" data-path="iris-analysis.html"><a href="iris-analysis.html#petal-measurements"><i class="fa fa-check"></i><b>2.2</b> Petal measurements</a></li>
 </ul></li>
 </ul>
 
@@ -147,7 +152,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Template</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Template Book Title</a>
           </h1>
         </div>
 
@@ -157,13 +162,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="star-wars-analysis" class="section level1 hasAnchor" number="1">
 <h1><span class="header-section-number">1</span> Star Wars Analysis<a href="star-wars-analysis.html#star-wars-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<!-- If you want to include code but don't want to run it. You may use eval = FALSE in the chunck option. This will print, but not execute the code. -->
-<p>This is a test using text.</p>
-<div id="load-data" class="section level2 hasAnchor" number="1.1">
-<h2><span class="header-section-number">1.1</span> Load data<a href="star-wars-analysis.html#load-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Test using text.</p>
+<p>Analyzing and visualizing the Star Wars data set.</p>
+<div id="load-data-count-species" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Load data &amp; Count species<a href="star-wars-analysis.html#load-data-count-species" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>First the data is loaded and then the species are counted.</p>
+<!-- If you want to include code but don't want to run it. You may use eval = FALSE in the chunk option. This will print, but not execute the code. -->
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="star-wars-analysis.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ------------------------------------------------------------------------------</span></span>
-<span id="cb1-2"><a href="star-wars-analysis.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Count species</span></span>
+<span id="cb1-2"><a href="star-wars-analysis.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Count species in the Star Wars data set</span></span>
 <span id="cb1-3"><a href="star-wars-analysis.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># March 21, 2023</span></span>
 <span id="cb1-4"><a href="star-wars-analysis.html#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># TS O&#39;Leary</span></span>
 <span id="cb1-5"><a href="star-wars-analysis.html#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># ------------------------------------------------------------------------------</span></span>
@@ -183,10 +188,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-19"><a href="star-wars-analysis.html#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>()</span>
 <span id="cb1-20"><a href="star-wars-analysis.html#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-21"><a href="star-wars-analysis.html#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Save data</span></span>
-<span id="cb1-22"><a href="star-wars-analysis.html#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(dat, here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;data/processed/species_count.rds&quot;</span>))</span></code></pre></div>
+<span id="cb1-22"><a href="star-wars-analysis.html#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">saveRDS</span>(dat, here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;data/processed/starwars_species_count.rds&quot;</span>))</span></code></pre></div>
 </div>
 <div id="visualize-data" class="section level2 hasAnchor" number="1.2">
 <h2><span class="header-section-number">1.2</span> Visualize data<a href="star-wars-analysis.html#visualize-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Visualize histogram of counted species.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="star-wars-analysis.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ------------------------------------------------------------------------------</span></span>
 <span id="cb2-2"><a href="star-wars-analysis.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Histogram of species counts</span></span>
 <span id="cb2-3"><a href="star-wars-analysis.html#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># March 21, 2023</span></span>
@@ -209,9 +215,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## ✖ dplyr::lag()    masks stats::lag()
 ## ℹ Use the ]8;;http://conflicted.r-lib.org/conflicted package]8;; to force all conflicts to become errors</code></pre>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="star-wars-analysis.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load data</span></span>
-<span id="cb4-2"><a href="star-wars-analysis.html#cb4-2" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;data/processed/species_count.rds&quot;</span>))</span>
+<span id="cb4-2"><a href="star-wars-analysis.html#cb4-2" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;data/processed/starwars_species_count.rds&quot;</span>))</span>
 <span id="cb4-3"><a href="star-wars-analysis.html#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="star-wars-analysis.html#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Histogram plot with </span></span>
+<span id="cb4-4"><a href="star-wars-analysis.html#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Histogram plot with cowplot theme</span></span>
 <span id="cb4-5"><a href="star-wars-analysis.html#cb4-5" aria-hidden="true" tabindex="-1"></a>dat <span class="sc">%&gt;%</span></span>
 <span id="cb4-6"><a href="star-wars-analysis.html#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
 <span id="cb4-7"><a href="star-wars-analysis.html#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">x =</span> n),</span>
@@ -219,11 +225,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb4-9"><a href="star-wars-analysis.html#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">&quot;grey80&quot;</span></span>
 <span id="cb4-10"><a href="star-wars-analysis.html#cb4-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
 <span id="cb4-11"><a href="star-wars-analysis.html#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Number of observations&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Count&quot;</span>) <span class="sc">+</span></span>
-<span id="cb4-12"><a href="star-wars-analysis.html#cb4-12" aria-hidden="true" tabindex="-1"></a>  cowplot<span class="sc">::</span><span class="fu">theme_minimal_hgrid</span>(<span class="at">font_family =</span> <span class="st">&quot;Myriad Pro&quot;</span>)</span></code></pre></div>
+<span id="cb4-12"><a href="star-wars-analysis.html#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(</span>
+<span id="cb4-13"><a href="star-wars-analysis.html#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">mult =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.05</span>))</span>
+<span id="cb4-14"><a href="star-wars-analysis.html#cb4-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb4-15"><a href="star-wars-analysis.html#cb4-15" aria-hidden="true" tabindex="-1"></a>  cowplot<span class="sc">::</span><span class="fu">theme_minimal_hgrid</span>(<span class="at">font_family =</span> <span class="st">&quot;Myriad Pro&quot;</span>)</span></code></pre></div>
 <pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
 <p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="star-wars-analysis.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Save data</span></span>
-<span id="cb6-2"><a href="star-wars-analysis.html#cb6-2" aria-hidden="true" tabindex="-1"></a>cowplot<span class="sc">::</span><span class="fu">ggsave2</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;output/figs/species_hist.tiff&quot;</span>),</span>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="star-wars-analysis.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Save plot</span></span>
+<span id="cb6-2"><a href="star-wars-analysis.html#cb6-2" aria-hidden="true" tabindex="-1"></a>cowplot<span class="sc">::</span><span class="fu">ggsave2</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">&quot;output/figs/starwars_species_hist.tiff&quot;</span>),</span>
 <span id="cb6-3"><a href="star-wars-analysis.html#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">height =</span> <span class="dv">5</span>,</span>
 <span id="cb6-4"><a href="star-wars-analysis.html#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">width =</span> <span class="dv">7</span></span>
 <span id="cb6-5"><a href="star-wars-analysis.html#cb6-5" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
@@ -235,8 +244,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="preface.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="project-goal.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="iris-analysis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

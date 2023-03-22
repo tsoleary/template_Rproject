@@ -1,5 +1,5 @@
 ---
-title: "Template"
+title: "Template Book Title"
 author: "TS O'Leary"
 date: "2023-03-22"
 description: "Template gitbook report of analysis"
@@ -13,31 +13,48 @@ documentclass: book
 ---
 
 
-```{r, setup, include=FALSE}
+```{r, setup, include = FALSE}
 knitr::opts_knit$set(root.dir = here::here())
 ```
 
-
-<!-- This book can be rendered with the following command `knit_with_parameters("~/R/template_Rproject/docs/index.Rmd")` or by using the knit button above in the RStudio -->
-
-# Preface {-}
+# Project goal {-}
 
 This is a minimal working book that contains the scripts used to create my analysis
 
 # Star Wars Analysis
 
-<!-- If you want to include code but don't want to run it. You may use eval = FALSE in the chunck option. This will print, but not execute the code. -->
+Analyzing and visualizing the Star Wars data set.
 
-This is a test using text.
+## Load data & Count species
 
-## Load data
+First the data is loaded and then the species are counted.
 
-Test using text.
+<!-- If you want to include code but don't want to run it. You may use eval = FALSE in the chunk option. This will print, but not execute the code. -->
 
-```{r, file = "src/analysis_1/01_count_species.R", eval = FALSE}
+```{r, file = "src/starwars/01_count_species.R", eval = FALSE}
 ```
 
 ## Visualize data
 
-```{r, file = "src/analysis_1/02_histogram_species.R"}
+Visualize histogram of counted species.
+
+```{r, file = "src/starwars/02_histogram_species.R"}
+```
+
+# Iris Analysis
+
+Analyzing and visualizing the Iris data set.
+
+## Load data & Group species
+
+The data is loaded and then the species are grouped.
+
+```{r, file = "src/iris/01_load_group_data.R", eval = FALSE}
+```
+
+## Petal measurements
+
+Scatter plot of the petal measurements.
+
+```{r, file = "src/iris/02_petal_plot.R"}
 ```

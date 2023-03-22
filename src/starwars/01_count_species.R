@@ -1,5 +1,5 @@
 # ------------------------------------------------------------------------------
-# Count species
+# Count species in the Star Wars data set
 # March 21, 2023
 # TS O'Leary
 # ------------------------------------------------------------------------------
@@ -19,4 +19,4 @@ dat <- dat %>%
   count()
 
 # Save data
-saveRDS(dat, here::here("data/processed/species_count.rds"))
+saveRDS(dat, here::here("data/processed/starwars_species_count.rds"))

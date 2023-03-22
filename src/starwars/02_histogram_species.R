@@ -11,7 +11,7 @@
 library(tidyverse)
 
 # Load data
-dat <- readRDS(here::here("data/processed/species_count.rds"))
+dat <- readRDS(here::here("data/processed/starwars_species_count.rds"))
 
 # Histogram plot with 
 dat %>%
